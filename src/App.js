@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Program from "./pages/Program";
-import { useEffect,Switch } from "react";
+import { useEffect } from "react";
 import CountryDetail from "./pages/CountryDetail";
 import UniversityDetail from "./pages/UniversityDetail";
 import About from "./pages/About";
@@ -21,7 +21,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Switch>
+          {/* <Switch> */}
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -33,7 +33,7 @@ function App() {
               path="/country/university/:id"
               element={<UniversityDetail />}
             />
-          </Switch>
+          {/* </Switch> */}
         </Routes>
       </main>
       <Footer />
