@@ -25,7 +25,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
               <h2>Ukraynada təhsil</h2>
               <ul>
@@ -35,7 +35,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/turkiye.png)` }}>
             <div className="content">
               <h2>Türkiyədə təhsil</h2>
               <ul>
@@ -45,7 +45,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/poland.jpg)` }}>
+          <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/poland.jpg)` }}>
             <div className="content">
               <h2>Polşada təhsil</h2>
               <ul>
@@ -55,7 +55,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
               <h2>Ukraynada təhsil</h2>
               <ul>
@@ -65,7 +65,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/turkiye.png)` }}>
             <div className="content">
               <h2>Türkiyədə təhsil</h2>
               <ul>
