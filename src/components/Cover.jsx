@@ -15,7 +15,7 @@ const Cover = () => {
     <section id="cover_as">
       <div id="slider_div">
         <div className="slider" ref={sliderRef}>
-        <div className="slides" style={{ backgroundImage: `url(/public/assets/images/cover/poland.jpg)` }}>
+        <div className="slides" style={{ backgroundImage: `url(/nf_new_web/assets/images/cover/poland.jpg)` }}>
             <div className="content">
               <h2>Polşada təhsil</h2>
               <ul>
