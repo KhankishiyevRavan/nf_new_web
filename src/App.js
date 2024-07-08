@@ -21,19 +21,17 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Switch>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/countries" element={<Countries />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/countries" element={<Countries />} />
 
-            {/* <Route path="/program" element={<Program />} /> */}
-            <Route path="/country/:id" element={<CountryDetail />} />
-            <Route
-              path="/country/university/:id"
-              element={<UniversityDetail />}
-            />
-          </Switch>
+          {/* <Route path="/program" element={<Program />} /> */}
+          <Route path="/country/:id" element={<CountryDetail />} />
+          <Route
+            path="/country/university/:id"
+            element={<UniversityDetail />}
+          />
         </Routes>
       </main>
       <Footer />
