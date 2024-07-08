@@ -1,5 +1,5 @@
 import React from 'react';
-import Test from "../components/Car/Test"
+// import Test from "../components/Car/Test"
 
 const Program = () => {
   const images = [
@@ -21,9 +21,9 @@ const Program = () => {
   return (
     <div>
       <h1>Slider Carousel Example</h1>
-      {chunkedImages.map((chunk, index) => (
-        <Test key={index} images={chunk} />
-      ))}
+      {/* {chunkedImages.map((chunk, index) => (
+        // <Test key={index} images={chunk} />
+      ))} */}
     </div>
   );
 }
