@@ -1,0 +1,10 @@
+#services {
+  background-image: url("/public/assets/images/service_bg.png");
+  height: 100%;
+  max-height: 475px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #EDF3F5;
+  /* width: 100%; */
+}

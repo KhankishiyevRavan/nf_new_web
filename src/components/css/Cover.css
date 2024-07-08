@@ -1,0 +1,217 @@
+#cover_as {
+  position: relative;
+  height: calc(100dvh - 110px);
+  /* background-color: red; */
+  max-height: 700px;
+}
+#slider_div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.slider {
+  position: absolute;
+  inset: 0px 0px 0px 0px;
+  background: #ccc;
+  border-radius: 0px;
+}
+.slider .slides {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 320px;
+  background: var(--img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  border-radius: 0px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider .slides:nth-child(1),
+.slider .slides:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+.slides:nth-child(3) {
+  background-size: cover;
+  left: calc(50% + 0px);
+  border-radius: 20px;
+}
+.slides:nth-child(4) {
+  background-size: cover;
+  left: calc(50% + 260px);
+  border-radius: 20px;
+}
+.slides:nth-child(5) {
+  background-size: cover;
+  left: calc(50% + 520px);
+  border-radius: 20px;
+}
+.slides:nth-child(6) {
+  background-size: cover;
+  left: calc(50% + 1020px);
+  border-radius: 20px;
+
+  opacity: 0;
+}
+.buttons {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  gap: 20px;
+}
+.buttons button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+}
+/* .buttons button::before {
+  content: ">";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+} */
+.buttons button::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  transform: rotate(315deg) translate(2px, 2px);
+}
+.buttons button:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  transform: rotate(135deg) translate(2px, 2px);
+}
+.buttons button:active {
+  opacity: 0.5;
+}
+#cover_as .content {
+  position: relative;
+  padding: 40px;
+  max-width: 600px;
+  transition: 0.25s;
+  transition-delay: 0;
+  transform: translateY(40px);
+  z-index: 10000;
+  opacity: 0;
+  color: white;
+  background: rgb(16, 94, 182);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 94, 182, 1) 0%,
+    rgba(255, 255, 255, 0) 93%
+  );
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider .slides:nth-child(1) .content,
+.slider .slides:nth-child(2) .content {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+ #cover_as .content h2 {
+  font-size: 64px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+#cover_as .content p {
+  color: white;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+#cover_as .content ul li {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+}
+.slides .container {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  #slider_div .content h2 {
+    font-size: 48px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  /* .slider{
+    inset: 0 0 170px 0 ;
+  } */
+  .slider .slides {
+    width: 30%;
+    height: 100px;
+    top: initial;
+    bottom: -170px;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  .slides:nth-child(1),
+  .slides:nth-child(2) {
+    top: initial;
+    bottom: 0;
+  }
+  .slides:nth-child(3) {
+    left: 0;
+    bottom: 20px;
+  }
+
+  .slides:nth-child(4) {
+    left: 35%;
+    bottom: 20px;
+  }
+  .slides:nth-child(5) {
+    left: 70%;
+    bottom: 20px;
+  }
+  .slides:nth-child(6) {
+    left: 100%;
+    bottom: 20px;
+  }
+  #slider_div .content {
+    justify-content: flex-start;
+  }
+  #cover_as .content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #slider_div .content h2 {
+    font-size: 48px;
+    max-width: max-content;
+  }
+}

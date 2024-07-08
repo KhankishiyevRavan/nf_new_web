@@ -1,0 +1,68 @@
+#news_sec {
+  background-color: #edf3f5;
+  padding: 50px 0;
+}
+#news_sec #education_steps_text {
+  text-align: center;
+}
+#news_sec #education_steps_text h2 span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  /* line-height: 1.2; */
+  letter-spacing: 0px;
+  display: block;
+  margin-top: 15px;
+}
+#news_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.news_card {
+  background-color: white;
+  /* height: 500px; */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 14px 19px 0px rgba(221, 229, 236, 0.42);
+}
+.news_card_image {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.news_card_image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.news_card_text {
+  padding: 20px;
+}
+.news_card_date {
+  font-size: 17px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #58595e;
+}
+.news_card_text h3 {
+  font-size: 20px;
+  line-height: 29px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.news_card_text button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #58595e;
+  font-weight: 600;
+  line-height: 32px;
+}

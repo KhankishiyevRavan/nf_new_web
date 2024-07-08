@@ -1,0 +1,318 @@
+
+#about_us_section {
+    padding-top: 50px;
+}
+
+#left_text_about {
+    width: 90%;
+}
+
+#left_text_about h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    display: inline-block;
+}
+
+#left_text_about span {
+    color: #58595E;
+}
+
+#right_text_about {
+    width: 84%;
+    color: #787B84;
+    font-family: "Plus Jakarta Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+#about_us_section #ds-flx-aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img_under_text_aboutus {
+    margin-top: 50px;
+}
+
+#img_under_text_aboutus img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_innertext {
+    padding: 60px 50px;
+    border: 1px solid #F3F3F3;
+    width: 33.333%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.about_innertext h1 {
+    font-size: 75px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.dots_about span {
+    width: 4px;
+    height: 4px;
+    background: #FB4927;
+    margin-right: 4px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.about_innertext h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#numbers_in_aboutus {
+    display: flex;
+}
+
+.about_innertext::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FB4927;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+.about_innertext:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.about_innertext::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#about_us_sec_section h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    display: inline-block;
+}
+
+#about_us_sec_section span {
+    color: #58595E;
+}
+
+#about_us_sec_section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left_right_ds_flx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_text_about_second {
+    width: 54%;
+    margin-top: 170px;
+}
+
+.left_text_about_second p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #787b84;
+    margin-top: 20px;
+}
+
+.img_right_side_about {
+    margin-top: 100px;
+}
+
+.img_right_about {
+    width: 100%;
+}
+
+.img_right_about img {
+    width: 100%;
+}
+
+#bg-foto-section {
+    background-image: url("https://wp.xpressbuddy.com/evisa/wp-content/uploads/2023/12/team_bg.jpg");
+    padding-bottom: 120px;
+}
+
+#text_center {
+    margin-top: 120px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+#text_center h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    display: inline-block;
+}
+
+#text_center span {
+    color: #58595E;
+}
+
+#text_center p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #787b84;
+    margin-top: 40px;
+}
+
+.box_about {
+    width: 24%;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #EDF3F5;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 302px;
+    margin-top: 30px;
+}
+
+.img_box_about img {
+    width: 100%;
+}
+
+#many_boxes {
+    margin-top: 30px;
+}
+
+.text_box_about {
+    padding: 30px 10px;
+    padding-bottom: 50px;
+}
+
+.text_box_about h3 a {
+    font-size: 24px;
+    font-weight: 600;
+    color: currentColor;
+}
+
+.text_box_about span {
+    font-size: 14px;
+    color: #58595E;
+}
+
+#many_boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+    #about_us_sec_section h2 {
+        font-size: 42px;
+    }
+    .left_text_about_second {
+        width: 45%;
+        margin-top: 170px;
+    }
+    .img_right_side_about {
+        width: 50%;
+        margin-top: 204px;
+    }
+    #left_text_about h2 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .text_box_about h3 a {
+        font-size: 20px;
+        font-weight: 600;
+        color: currentColor;
+    }
+    .box_about {
+        width: 40%;
+        gap: 20px;
+    }
+    #about_us_section #ds-flx-aboutus {
+        flex-direction: column;
+    }
+    #right_text_about {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #left_text_about {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .left_right_ds_flx {
+        flex-direction: column-reverse;
+    }
+    .reverse_flx {
+        flex-direction: column !important;
+    }
+    .img_right_side_about {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .left_text_about_second {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #numbers_in_aboutus {
+        flex-direction: column;
+    }
+    .about_innertext {
+        padding: 20px 50px;
+        width: 100%;
+    }
+    #about_us_section {
+        padding-top: 40px;
+    }
+    #text_center {
+        margin-top: 100px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box_about {
+        width: 100%;
+    }
+    #many_boxes {
+        justify-content: center;
+    }
+    #about_us_sec_section h2 {
+        font-size: 32px;
+    }
+    .left_text_about_second p {
+        font-size: 17px;
+        margin-top: 15px;
+    }
+    .img_right_side_about {
+        margin-top: 70px;
+    }
+    #text_center {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+}

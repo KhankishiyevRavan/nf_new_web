@@ -1,0 +1,13 @@
+#countries_section .container {
+  /* padding-top: 50px; */
+  /* display: grid;
+  gap: 20px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+}
+#countries_section .container >div{
+    margin-top: 50px;
+}
+#countries_section .container >div>h2{
+    font-size: 34px;
+}
