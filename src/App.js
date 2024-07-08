@@ -22,15 +22,15 @@ function App() {
       <main>
         <Routes>
           {/* <Switch> */}
-            <Route exact path="/nf_new_web" element={<Home />} />
-            <Route path="/nf_new_web/about" element={<About />} />
-            <Route path="/nf_new_web/contact" element={<Contact />} />
-            <Route path="/nf_new_web/countries" element={<Countries />} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/countries" element={<Countries />} />
 
             {/* <Route path="/program" element={<Program />} /> */}
-            <Route path="/nf_new_web/country/:id" element={<CountryDetail />} />
+            <Route path="/country/:id" element={<CountryDetail />} />
             <Route
-              path="/nf_new_web/country/university/:id"
+              path="/country/university/:id"
               element={<UniversityDetail />}
             />
           {/* </Switch> */}
