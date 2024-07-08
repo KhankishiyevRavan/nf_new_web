@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Program from "./pages/Program";
-import { useEffect } from "react";
+import { useEffect,Switch } from "react";
 import CountryDetail from "./pages/CountryDetail";
 import UniversityDetail from "./pages/UniversityDetail";
 import About from "./pages/About";
@@ -21,17 +21,19 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/countries" element={<Countries />} />
+          <Switch>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/countries" element={<Countries />} />
 
-          {/* <Route path="/program" element={<Program />} /> */}
-          <Route path="/country/:id" element={<CountryDetail />} />
-          <Route
-            path="/country/university/:id"
-            element={<UniversityDetail />}
-          />
+            {/* <Route path="/program" element={<Program />} /> */}
+            <Route path="/country/:id" element={<CountryDetail />} />
+            <Route
+              path="/country/university/:id"
+              element={<UniversityDetail />}
+            />
+          </Switch>
         </Routes>
       </main>
       <Footer />
