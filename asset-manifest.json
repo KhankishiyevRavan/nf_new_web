@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nf_new_web/static/css/main.baac37e0.css",
-    "main.js": "/nf_new_web/static/js/main.8878f1f3.js",
+    "main.js": "/nf_new_web/static/js/main.7fbeb02f.js",
     "static/media/education_steps-removebg.png": "/nf_new_web/static/media/education_steps-removebg.cf65c398a1d0dd70c4e3.png",
     "static/media/subs-image-removebg.png": "/nf_new_web/static/media/subs-image-removebg.b132ba0c714631ca7b4a.png",
     "index.html": "/nf_new_web/index.html",
     "main.baac37e0.css.map": "/nf_new_web/static/css/main.baac37e0.css.map",
-    "main.8878f1f3.js.map": "/nf_new_web/static/js/main.8878f1f3.js.map"
+    "main.7fbeb02f.js.map": "/nf_new_web/static/js/main.7fbeb02f.js.map"
   },
   "entrypoints": [
     "static/css/main.baac37e0.css",
-    "static/js/main.8878f1f3.js"
+    "static/js/main.7fbeb02f.js"
   ]
 }
