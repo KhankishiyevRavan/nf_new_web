@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70d7b4c7.css",
+    "main.js": "/static/js/main.e21fa305.js",
+    "static/media/education_steps-removebg.png": "/static/media/education_steps-removebg.cf65c398a1d0dd70c4e3.png",
+    "static/media/subs-image-removebg.png": "/static/media/subs-image-removebg.b132ba0c714631ca7b4a.png",
+    "index.html": "/index.html",
+    "main.70d7b4c7.css.map": "/static/css/main.70d7b4c7.css.map",
+    "main.e21fa305.js.map": "/static/js/main.e21fa305.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70d7b4c7.css",
+    "static/js/main.e21fa305.js"
+  ]
+}
