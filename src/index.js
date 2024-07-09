@@ -6,8 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/nf_new_web">
-  {/* <BrowserRouter> */}
+  // <BrowserRouter basename="/nf_new_web">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );

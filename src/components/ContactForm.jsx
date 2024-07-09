@@ -96,7 +96,7 @@ const ContactForm = () => {
             <div className="container">
                 <div id="contact_form">
                     <div>
-                        <p>Suallarınız var və ya əlavə məlumat istəyirsiniz?</p>
+                        <p></p>
                         <form onSubmit={handleWriteData}>
                             <div className={`form_group ${errors.fullname ? 'error' : ''}`}>
                                 <label htmlFor="full_name">

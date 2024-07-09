@@ -1,7 +1,6 @@
 import React from "react";
 import Cover from "../components/Cover";
 
-import Partners from "../components/Partners";
 // import Services from "../components/Services";
 import ChooseCountry from "../components/ChooseCountry";
 import EducationSteps from "../components/EducationSteps";

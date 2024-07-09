@@ -10,6 +10,7 @@ import UniversityDetail from "./pages/UniversityDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Countries from "./pages/Countries";
+import Blogs from "./pages/Blogs";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -22,17 +23,17 @@ function App() {
       <main>
         <Routes>
           {/* <Switch> */}
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/countries" element={<Countries />} />
-
-            {/* <Route path="/program" element={<Program />} /> */}
-            <Route path="/country/:id" element={<CountryDetail />} />
-            <Route
-              path="/country/university/:id"
-              element={<UniversityDetail />}
-            />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/countries" element={<Countries />} />
+          <Route path="/news" element={<Blogs />} />
+          {/* <Route path="/program" element={<Program />} /> */}
+          <Route path="/country/:id" element={<CountryDetail />} />
+          <Route
+            path="/country/university/:id"
+            element={<UniversityDetail />}
+          />
           {/* </Switch> */}
         </Routes>
       </main>

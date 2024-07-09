@@ -34,7 +34,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink activeclassname="active" to="/blogs">
+              <NavLink activeclassname="active" to="/news">
                 Xəbərlər
               </NavLink>
             </li>
