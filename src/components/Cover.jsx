@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import "./css/Cover.css";
+import { useTranslation } from "react-i18next";
 // import SwiperCover from "/public/SwiperCover";
 const Cover = () => {
+  const { t } = useTranslation("cover");
   const sliderRef = useRef();
   const nextSlide = () => {
     let slides = document.querySelectorAll(".slides");
@@ -15,63 +17,63 @@ const Cover = () => {
     <section id="cover_as">
       <div id="slider_div">
         <div className="slider" ref={sliderRef}>
-        <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/poland.jpg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
             <div className="content">
-              <h2>Polşada təhsil</h2>
+              <h2>{t('education_in_poland')}</h2>
               <ul>
-                <li> <i className="fa-solid fa-check"></i> Asan müraciət</li>
-                <li><i className="fa-solid fa-check"></i> Yaşam münasib</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('easy_application')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('affordable_living')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
-              <h2>Ukraynada təhsil</h2>
+              <h2>{t('education_in_ukraine')}</h2>
               <ul>
-                <li> <i className="fa-solid fa-check"></i> Online tədris</li>
-                <li><i className="fa-solid fa-check"></i> Tanınan diplom</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('online_education')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
             <div className="content">
-              <h2>Türkiyədə təhsil</h2>
+              <h2>{t('education_in_turkey')}</h2>
               <ul>
-                <li><i className="fa-solid fa-check"></i> Yüksək Standartlar</li>
-                <li><i className="fa-solid fa-check"></i> Tanınan diplom</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('high_standards')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/poland.jpg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
             <div className="content">
-              <h2>Polşada təhsil</h2>
+              <h2>{t('education_in_poland')}</h2>
               <ul>
-                <li> <i className="fa-solid fa-check"></i> Asan müraciət</li>
-                <li><i className="fa-solid fa-check"></i> Yaşam münasib</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('easy_application')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('affordable_living')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
-              <h2>Ukraynada təhsil</h2>
+              <h2>{t('education_in_ukraine')}</h2>
               <ul>
-                <li> <i className="fa-solid fa-check"></i> Online tədris</li>
-                <li><i className="fa-solid fa-check"></i> Tanınan diplom</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('online_education')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
             <div className="content">
-              <h2>Türkiyədə təhsil</h2>
+              <h2>{t('education_in_turkey')}</h2>
               <ul>
-                <li><i className="fa-solid fa-check"></i> Yüksək Standartlar</li>
-                <li><i className="fa-solid fa-check"></i> Tanınan diplom</li>
-                <li><i className="fa-solid fa-check"></i> Hərbi möhlət</li>
+                <li><i className="fa-solid fa-check"></i> {t('high_standards')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
+                <li><i className="fa-solid fa-check"></i> {t('military_deferment')}</li>
               </ul>
             </div>
           </div>
@@ -81,7 +83,7 @@ const Cover = () => {
           <button className="next" onClick={nextSlide}></button>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

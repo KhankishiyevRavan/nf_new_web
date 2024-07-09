@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./css/News.css";
 import CardNews from "./CardNews";
+import { readData } from "../api/dbservice";
 const News = () => {
+  const [news, setNews] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      const path = `/news`;
+      try {
+        const result = await readData(path);
+        console.log(result);
+        let blogs = [];
+        for (let blogId in result) {
+          let blog = result[blogId];
+
+          blog["id"] = blogId;
+          blogs.push(blog);
+        }
+        console.log(blogs);
+        setNews(blogs)
+      } catch (error) {
+        console.error("Error reading data: ", error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <section id="news_sec">
@@ -14,26 +37,11 @@ const News = () => {
             </h2>
           </div>
           <div id="news_cards">
-            {/* <div className="news_card">
-              <div className="news_card_image">
-                <img
-                  src="https://wp.xpressbuddy.com/evisa/wp-content/uploads/2023/12/post_02.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="news_card_text">
-                <span className="news_card_date">
-                  <i className="fa-regular fa-calendar"></i>4 may 2024, 18:07
-                </span>
-                <h3>Your Comprehensive Guide to Successfully Pursuing</h3>
-                <button>
-                  Ətraflı <i className="fa-solid fa-arrow-right-long"></i>
-                </button>
-              </div>
-            </div> */}
-            <CardNews />
-            <CardNews />
-            <CardNews />
+            {
+              news?.map((n, index) => (
+                <CardNews key={index} info={n} />
+              ))
+            }
           </div>
         </div>
       </section>
