@@ -17,7 +17,7 @@ const Cover = () => {
     <section id="cover_as">
       <div id="slider_div">
         <div className="slider" ref={sliderRef}>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/poland.jpg)` }}>
             <div className="content">
               <h2>{t('education_in_poland')}</h2>
               <ul>
@@ -27,7 +27,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
               <h2>{t('education_in_ukraine')}</h2>
               <ul>
@@ -37,7 +37,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/turkiye.png)` }}>
             <div className="content">
               <h2>{t('education_in_turkey')}</h2>
               <ul>
@@ -47,7 +47,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/poland.jpg)` }}>
             <div className="content">
               <h2>{t('education_in_poland')}</h2>
               <ul>
@@ -57,7 +57,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
               <h2>{t('education_in_ukraine')}</h2>
               <ul>
@@ -67,7 +67,7 @@ const Cover = () => {
               </ul>
             </div>
           </div>
-          <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
+          <div className="slides" style={{ backgroundImage: `url( /nf_new_web/assets/images/cover/turkiye.png)` }}>
             <div className="content">
               <h2>{t('education_in_turkey')}</h2>
               <ul>

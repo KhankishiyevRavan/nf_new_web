@@ -52,7 +52,7 @@ const Header = () => {
     <header className={`main-header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <Link to="/" id="h-logo">
-          <img src="/assets/images/nf_logo.png" alt="" />
+          <img src="/nf_new_web/assets/images/nf_logo.png" alt="" />
         </Link>
         <div style={{ display: "flex", gap: "20px" }}>
           <nav className={`menu ${menuShow ? "menuShow" : ""}`}>
@@ -107,7 +107,7 @@ const Header = () => {
                 setMenuShow(!menuShow);
               }}
             >
-              <img src="/assets/images/menu.svg" alt="" />
+              <img src="/nf_new_web/assets/images/menu.svg" alt="" />
             </div>
           </div>
         </div>
