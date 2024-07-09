@@ -53,13 +53,17 @@ const UniversityDetail = () => {
     }, [universities])
     return (
         <>
-            <section id="first_section_"
-            // style={{backgroundImage:`url('${university.logo_url}')`}}
+            <section id="first_section_" className='u'
+                style={{ backgroundImage: `url('${university?.image_url}')`, height: "500px" }}
             >
                 <div className="container">
                     <div id="first_section_text" >
                         {/* <h1>Country Detailssss</h1> */}
-                        <div id="contries_div">
+                        <div style={{ color: "white", display: "flex" , gap:"20px", flexDirection:"column"}}>
+                            <h2 style={{fontSize:"21px"}}>{university.country}, {university.city}</h2>
+                            <h4 style={{fontSize:"41px"}}>{university.name}</h4>
+                        </div>
+                        <div id="contries_div" style={{marginTop:"20px"}}>
                             <Link to="/" className="links_for">
                                 <span>Ana səhifə</span>
                             </Link>
@@ -73,15 +77,15 @@ const UniversityDetail = () => {
                     </div>
                 </div>
             </section>
-            <div id="main_second_section" className='container'>
+            <div id="main_second_section" className='container' >
                 <section id="second_section_">
                     <div id="text_foto_second_sec">
-                        <h2>{university.country}, {university.city}</h2>
-                        <h4>{university.name}</h4>
+                        {/* <h2>{university.country}, {university.city}</h2>
+                        <h4>{university.name}</h4> */}
                         <p>{university.about}</p>
-                        <div id="img_second_sec">
+                        {/* <div id="img_second_sec">
                             <img style={{ borderRadius: "20px" }} src={university.image_url} alt="" />
-                        </div>
+                        </div> */}
                         <h2>Niyə seçməlisən?</h2>
                         <div id="flx_second_sec">
                             <div className="boxes_choose">

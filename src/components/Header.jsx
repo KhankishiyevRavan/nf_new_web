@@ -19,7 +19,7 @@ const Header = () => {
     <header className={` ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <Link to="/" id="h-logo">
-          <img src="./assets/images/nf_logo.png" alt="" />
+          <img src="/assets/images/nf_logo.png" alt="" />
         </Link>
         <nav className={`${menuShow ? "menuShow" : ""}`}>
           <ul>
@@ -30,7 +30,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink activeclassname="active" to="/countries">
-                Ölkələr
+                Universitetlər
               </NavLink>
             </li>
             <li>
@@ -57,7 +57,7 @@ const Header = () => {
             setMenuShow(!menuShow);
           }}
         >
-          <img src="./assets/images/menu.svg" alt="" />
+          <img src="/assets/images/menu.svg" alt="" />
         </div>
       </div>
     </header>
