@@ -8,16 +8,16 @@ const SwiperCover = () => {
         <div className="swiper-wrapper">
           <div className="swiper-slide">
           
-            <img className="swiper-slicer-image" src="/assets/images/cover/kharkov.jpeg" alt="" />
+            <img className="swiper-slicer-image" src="/nf_new_web/assets/images/cover/kharkov.jpeg" alt="" />
           </div>
           <div className="swiper-slide">
-            <img className="swiper-slicer-image" src="/assets/images/cover/istanbul.webp" alt="" />
+            <img className="swiper-slicer-image" src="/nf_new_web/assets/images/cover/istanbul.webp" alt="" />
           </div>
           <div className="swiper-slide">
-            <img className="swiper-slicer-image" src="/assets/images/cover/poland.jpg" alt="" />
+            <img className="swiper-slicer-image" src="/nf_new_web/assets/images/cover/poland.jpg" alt="" />
           </div>
           <div className="swiper-slide">
-            <img className="swiper-slicer-image" src="/assets/images/cover/turkiye.png" alt="" />
+            <img className="swiper-slicer-image" src="/nf_new_web/assets/images/cover/turkiye.png" alt="" />
           </div>
         </div>
 

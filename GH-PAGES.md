@@ -9,7 +9,10 @@
     "eject": "react-scripts eject"
   }, -->
   <!-- Cover.jsx -->
+  <!-- Header.jsx -->
+  <!-- SwiperCover.jsx -->
   <!-- /assets/ ====> /nf_new_web/assets/ -->
+
 
 <!-- index.js -->
 <!-- <BrowserRouter basename="/nf_new_web"> -->
