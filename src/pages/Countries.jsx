@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { readData } from '../api/dbservice';
 import "./Countries.css";
 import CardUni from '../components/CardUni';
+import { useTranslation } from 'react-i18next';
+
 const Countries = () => {
+  const { t, i18n } = useTranslation(["countries"]); // i18next kancasından t fonksiyonunu alıyoruz
   const [universities, setUniversities] = useState(null);
   const [countries, setCountries] = useState({});
-
   useEffect(() => {
     const fetchData = async () => {
       const path = "/universities";
@@ -14,7 +16,7 @@ const Countries = () => {
         const result = await readData(path);
         setUniversities(result);
       } catch (error) {
-        console.error("Error reading data: ", error);
+        console.error("Veri okuma hatası: ", error);
       }
     };
     fetchData();
@@ -23,6 +25,7 @@ const Countries = () => {
   useEffect(() => {
     if (universities) {
       const countriesObj = {};
+      const countriesObjEn = {};
       for (let universityId in universities) {
         let university = universities[universityId];
         if (university?.country) {
@@ -34,23 +37,36 @@ const Countries = () => {
             ...university
           });
         }
+        if (university?.country_en) {
+          if (!countriesObjEn[university.country_en]) {
+            countriesObjEn[university.country_en] = [];
+          }
+          countriesObjEn[university.country_en].push({
+            id: universityId,
+            ...university
+          });
+        }
       }
-      setCountries(countriesObj);
+      if (i18n.language === "az") {
+
+        setCountries(countriesObj);
+      } else if (i18n.language === "en") {
+        setCountries(countriesObjEn)
+      }
     }
-  }, [universities]);
+  }, [universities, i18n.language]);
+
   return (
     <>
-      <section id="first_section_"
-      >
+      <section id="first_section_">
         <div className="container">
-          <div id="first_section_text" >
-            {/* <h1>Country Detailssss</h1> */}
+          <div id="first_section_text">
             <div id="contries_div">
               <Link to="/" className="links_for">
-                <span>Ana səhifə</span>
+                <span>{t('home')}</span>
               </Link>
               <p>/</p>
-              <p>Ölkələr</p>
+              <p>{t('countries')}</p>
             </div>
           </div>
         </div>
@@ -63,7 +79,7 @@ const Countries = () => {
                 <h2>{country}</h2>
                 <div id='univerities_cards'>
                   {countries[country].map((university, uniIndex) => (
-                    <CardUni university={university} />
+                    <CardUni lang={i18n.language} key={uniIndex} university={university} />
                   ))}
                 </div>
               </div>
@@ -72,7 +88,7 @@ const Countries = () => {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Countries
+export default Countries;

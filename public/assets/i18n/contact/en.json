@@ -1,0 +1,15 @@
+{
+    "fullname_required": "Full name is required",
+    "email_required": "Email is required",
+    "phone_required": "Phone number is required",
+    "message_required": "Message is required",
+    "full_name_placeholder": "Emil Gasanov",
+    "email_placeholder": "emil@nf-edu.com",
+    "phone_placeholder": "+994 55 645 77 32",
+    "message_placeholder": "Write your message here...",
+    "sending": "Sending...",
+    "send_message": "Send Message",
+    "success_message": "Thank you! Your message will be responded to shortly.",
+    "contact_form_title": "Contact Us",
+    "contact_form_subtitle": "Do you have questions or need additional information?"
+}

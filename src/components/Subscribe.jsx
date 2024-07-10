@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, startTransition } from 'react';
 import "./css/Subscribe.css";
 import { writeData } from "../api/dbservice";
-import Success from "./Modal/Success"
+import Success from "./Modal/Success";
+import { useTranslation } from 'react-i18next';
+
 const Subscribe = () => {
+    const { t } = useTranslation(["subscribe"]);
     const [email, setEmail] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -21,10 +24,12 @@ const Subscribe = () => {
 
         try {
             await writeData(path, data);
-            setShowModal(true); // Modal'ı göster
-            setEmail(""); // Formu temizle
+            startTransition(() => {
+                setShowModal(true); // Modal göster
+                setEmail(""); // Formu temizle
+            });
         } catch (error) {
-            console.error("Error writing subscribe data: ", error);
+            console.error("Abunə məlumatını yazarkən səhv baş verdi: ", error);
         } finally {
             setIsSubmitting(false);
         }
@@ -39,17 +44,17 @@ const Subscribe = () => {
             <div className="container">
                 <div id="subscribe">
                     <div id="subscribe-text">
-                        <p>Ən son yeniliklərdə xəbardar olmaq üçün abunə ola bilərsiz.</p>
+                        <p>{t('subscribe_text')}</p>
                         <form onSubmit={handleWriteSubscribeData}>
                             <input 
                                 type="email" 
-                                placeholder='E-poçt əlavə edin' 
+                                placeholder={t('email_placeholder')} 
                                 value={email} 
                                 onChange={handleChange} 
                                 required 
                             />
                             <button type="submit" disabled={isSubmitting}>
-                                {isSubmitting ? 'Abone olunur...' : 'Abonə ol'}
+                                {isSubmitting ? t('subscribing') : t('subscribe_button')}
                             </button>
                         </form>
                     </div>

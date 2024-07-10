@@ -1,25 +1,28 @@
 import React, { useEffect } from 'react';
-import "./Success.css"
+import "./Success.css";
+import { useTranslation } from 'react-i18next';
+
 const Modal = ({ show, closeModal }) => {
+    const { t } = useTranslation(["modal"]);
+
     useEffect(() => {
         console.log(show);
-    }, [show])
+    }, [show]);
+
     return (
         <div id='success_modal' className={`modal ${show ? 'show' : ''}`}>
             <div className="modal_content">
                 <span className="close" onClick={closeModal}>&times;</span>
                 <h1 style={{ textAlign: "center" }}>
-                    <div className="checkmark-circle" >
+                    <div className="checkmark-circle">
                         <div className="background"></div>
                         <div className="checkmark draw"></div>
                     </div>
                 </h1>
-                <p style={{marginTop:"20px"}}>Təşəkkürler! Mesajınız tezliklə geri dönüş ediləcək.</p>
+                <p style={{ marginTop: "20px" }}>{t('thank_you_message')}</p>
             </div>
         </div>
     );
 };
 
 export default Modal;
-
-

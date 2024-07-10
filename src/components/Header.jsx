@@ -6,10 +6,11 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuShow, setMenuShow] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
-  const [selectedLang, setSelectedLang] = useState('en'); // Default selected language
-  const { t, i18n } = useTranslation(["header"]);
+  const [selectedLang, setSelectedLang] = useState('az'); // Default selected language
+  const { t, i18n } = useTranslation(["header"]); 
 
   const changeLanguage = useCallback((lng) => {
+    console.log(lng)
     i18n.changeLanguage(lng);
   }, [i18n]);
 
@@ -38,7 +39,7 @@ const Header = () => {
 
   useEffect(() => {
     // Fetch initial language selection or set default
-    const currentLang = localStorage.getItem('currentLang') || 'en';
+    const currentLang = localStorage.getItem('currentLang') || 'az';
     setSelectedLang(currentLang);
     changeLanguage(currentLang);
   }, [changeLanguage]);
@@ -94,8 +95,8 @@ const Header = () => {
               </div>
               <div className={`options ${showOptions ? 'show-options anim-options show-shadow' : ''}`}>
                 <ul className="options-list">
-                  <li className={selectedLang === 'en' ? 'selected' : ''} onClick={() => handleSelectLang('en')} data-lang="en">English</li>
                   <li className={selectedLang === 'az' ? 'selected' : ''} onClick={() => handleSelectLang('az')} data-lang="az">Azərbaycan</li>
+                  <li className={selectedLang === 'en' ? 'selected' : ''} onClick={() => handleSelectLang('en')} data-lang="en">English</li>
                 </ul>
                 <div id="trans-circle"></div>
               </div>

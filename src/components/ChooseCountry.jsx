@@ -114,7 +114,7 @@ const ChooseCountry = () => {
         <div id="univerities_cards">
           {/* Render university cards */}
           {showUniversities.map((university, index) => (
-            <CardUni lang={i18next?.language} key={index} university={university} />
+            <CardUni lang={i18n?.language} key={index} university={university} />
           ))}
         </div>
       </div>

@@ -1,0 +1,15 @@
+{
+    "fullname_required": "Ad soyad daxil edilməlidir",
+    "email_required": "E-poçt daxil edilməlidir",
+    "phone_required": "Telefon nömrəsi daxil edilməlidir",
+    "message_required": "Mesaj daxil edilməlidir",
+    "full_name_placeholder": "Emil Gasanov",
+    "email_placeholder": "emil@nf-edu.com",
+    "phone_placeholder": "+994 55 645 77 32",
+    "message_placeholder": "Mesajınızı buraya yazın...",
+    "sending": "Göndərilir...",
+    "send_message": "Mesaj göndər",
+    "success_message": "Təşəkkürlər! Mesajınıza tezliklə geri dönüş ediləcək.",
+    "contact_form_title": "Bizimlə Əlaqə",
+    "contact_form_subtitle": "Suallarınız var və ya əlavə məlumat istəyirsiniz?"
+}

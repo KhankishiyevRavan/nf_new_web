@@ -8,6 +8,7 @@
   overflow: auto;
   z-index: 111111111111;
   background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
 }
 #success_modal.modal.show {
   display: flex;

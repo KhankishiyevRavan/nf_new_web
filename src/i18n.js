@@ -17,7 +17,14 @@ i18n
     debug: false,
     ns: [
       "header",
-      "cover"
+      "cover",
+      "educationSteps",
+      "news",
+      "modal",
+      "subscribe",
+      "contact",
+      "countries",
+      "universityDetail"
     ],
     interpolation: {
       espaceValue: false,
