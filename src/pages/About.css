@@ -1,4 +1,3 @@
-
 #about_us_section {
     padding-top: 50px;
 }
@@ -228,14 +227,17 @@
     #about_us_sec_section h2 {
         font-size: 42px;
     }
+
     .left_text_about_second {
         width: 45%;
         margin-top: 170px;
     }
+
     .img_right_side_about {
         width: 50%;
         margin-top: 204px;
     }
+
     #left_text_about h2 {
         font-size: 42px;
     }
@@ -247,17 +249,21 @@
         font-weight: 600;
         color: currentColor;
     }
+
     .box_about {
         width: 40%;
         gap: 20px;
     }
+
     #about_us_section #ds-flx-aboutus {
         flex-direction: column;
     }
+
     #right_text_about {
         width: 100%;
         margin-top: 30px;
     }
+
     #left_text_about {
         width: 100%;
     }
@@ -267,27 +273,34 @@
     .left_right_ds_flx {
         flex-direction: column-reverse;
     }
+
     .reverse_flx {
         flex-direction: column !important;
     }
+
     .img_right_side_about {
         width: 100%;
         margin-top: 100px;
     }
+
     .left_text_about_second {
         width: 100%;
         margin-top: 10px;
     }
+
     #numbers_in_aboutus {
         flex-direction: column;
     }
+
     .about_innertext {
         padding: 20px 50px;
         width: 100%;
     }
+
     #about_us_section {
         padding-top: 40px;
     }
+
     #text_center {
         margin-top: 100px;
         padding-top: 100px;
@@ -298,21 +311,98 @@
     .box_about {
         width: 100%;
     }
+
     #many_boxes {
         justify-content: center;
     }
+
     #about_us_sec_section h2 {
         font-size: 32px;
     }
+
     .left_text_about_second p {
         font-size: 17px;
         margin-top: 15px;
     }
+
     .img_right_side_about {
         margin-top: 70px;
     }
+
     #text_center {
         margin-top: 50px;
         padding-top: 50px;
     }
 }
+
+#about_section_options .container .mission {
+    display: flex;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+#about_section_options .mission_text {
+    padding: 40px 0;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#about_section_options .mission_image {
+    width: 43%;
+    aspect-ratio: 3/2;
+}
+
+#about_section_options h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    display: inline-block;
+}
+
+#about_section_options span {
+    color: #58595E;
+}
+
+#about_section_options .mission_image img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about_section_options .container .mission:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:1000px) {
+    #about_section_options h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #about_section_options h2 {
+        font-size: 37px;
+    }
+    #about_section_options .mission{
+        flex-direction: column;
+    }
+    #about_section_options .mission > div{
+        width: 100%;
+        padding: 0;
+    }
+}
+/* <div class="box_about">
+<div class="img_box_about">
+    <img src="https://wp.xpressbuddy.com/evisa/wp-content/uploads/2023/12/img_01-1.png" alt="" />
+</div>
+<div class="text_box_about">
+    <h3>
+        <a href="#">Esther Howard</a>
+    </h3>
+    <span>Legal Advisor</span>
+</div>
+</div> */

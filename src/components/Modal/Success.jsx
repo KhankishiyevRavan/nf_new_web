@@ -5,9 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Modal = ({ show, closeModal }) => {
     const { t } = useTranslation(["modal"]);
 
-    useEffect(() => {
-        console.log(show);
-    }, [show]);
+  
 
     return (
         <div id='success_modal' className={`modal ${show ? 'show' : ''}`}>

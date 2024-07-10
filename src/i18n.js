@@ -24,7 +24,9 @@ i18n
       "subscribe",
       "contact",
       "countries",
-      "universityDetail"
+      "universityDetail",
+      "about",
+      "blogDetail"
     ],
     interpolation: {
       espaceValue: false,

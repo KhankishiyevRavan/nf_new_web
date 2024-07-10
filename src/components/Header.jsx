@@ -10,7 +10,6 @@ const Header = () => {
   const { t, i18n } = useTranslation(["header"]); 
 
   const changeLanguage = useCallback((lng) => {
-    console.log(lng)
     i18n.changeLanguage(lng);
   }, [i18n]);
 
