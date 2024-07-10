@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nf_new_web/static/css/main.01d1e153.css",
-    "main.js": "/nf_new_web/static/js/main.e37a69b6.js",
+    "main.css": "/nf_new_web/static/css/main.0c87ce9b.css",
+    "main.js": "/nf_new_web/static/js/main.62cee608.js",
     "static/media/education_steps-removebg.png": "/nf_new_web/static/media/education_steps-removebg.cf65c398a1d0dd70c4e3.png",
     "static/media/subs-image-removebg.png": "/nf_new_web/static/media/subs-image-removebg.b132ba0c714631ca7b4a.png",
     "index.html": "/nf_new_web/index.html",
     "static/media/getFetch.cjs": "/nf_new_web/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.01d1e153.css.map": "/nf_new_web/static/css/main.01d1e153.css.map",
-    "main.e37a69b6.js.map": "/nf_new_web/static/js/main.e37a69b6.js.map"
+    "main.0c87ce9b.css.map": "/nf_new_web/static/css/main.0c87ce9b.css.map",
+    "main.62cee608.js.map": "/nf_new_web/static/js/main.62cee608.js.map"
   },
   "entrypoints": [
-    "static/css/main.01d1e153.css",
-    "static/js/main.e37a69b6.js"
+    "static/css/main.0c87ce9b.css",
+    "static/js/main.62cee608.js"
   ]
 }
