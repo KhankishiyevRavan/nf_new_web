@@ -5,7 +5,7 @@ import { readData } from '../api/dbservice';
 import "./BlogDetail.css"
 const BlogDetail = () => {
   const { id } = useParams();
-  const { i18n } = useTranslation(["newsDetail"]);
+  const { i18n } = useTranslation();
   const [blog, setBlog] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
