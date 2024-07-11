@@ -148,7 +148,7 @@
   transform: translateY(0px);
   transition-delay: 0.5s;
 }
- #cover_as .content h2 {
+ #cover_as .content h1 {
   font-size: 64px;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
 }
@@ -165,7 +165,7 @@
   width: 100%;
 }
 @media (max-width: 900px) {
-  #cover_as #slider_div .content h2 {
+  #cover_as #slider_div .content h1 {
     font-size: 48px;
     max-width: 400px;
   }
@@ -210,7 +210,7 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  #cover_as #slider_div .content h2 {
+  #cover_as #slider_div .content h1 {
     font-size: 48px;
     max-width: max-content;
   }
