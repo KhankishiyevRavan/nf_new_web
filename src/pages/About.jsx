@@ -79,6 +79,17 @@ const About = () => {
                         <h2>{t('students')}</h2>
                     </div>
                     <div id="many_boxes">
+                        <div class="box_about">
+                            <div class="img_box_about">
+                                <img src="https://wp.xpressbuddy.com/evisa/wp-content/uploads/2023/12/img_01-1.png" alt="" />
+                            </div>
+                            <div class="text_box_about">
+                                <h3>
+                                    <a href="#">Esther Howard</a>
+                                </h3>
+                                <span>Legal Advisor</span>
+                            </div>
+                        </div>
                         {/* İçerik buraya gelecek */}
                     </div>
                 </div>
