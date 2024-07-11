@@ -19,7 +19,7 @@ const Cover = () => {
         <div className="slider" ref={sliderRef}>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
             <div className="content">
-              <h2>{t('education_in_poland')}</h2>
+              <h1>{t('education_in_poland')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('easy_application')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('affordable_living')}</li>
@@ -29,7 +29,7 @@ const Cover = () => {
           </div>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
-              <h2>{t('education_in_ukraine')}</h2>
+              <h1>{t('education_in_ukraine')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('online_education')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
@@ -39,7 +39,7 @@ const Cover = () => {
           </div>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
             <div className="content">
-              <h2>{t('education_in_turkey')}</h2>
+              <h1>{t('education_in_turkey')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('high_standards')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
@@ -49,7 +49,7 @@ const Cover = () => {
           </div>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/poland.jpg)` }}>
             <div className="content">
-              <h2>{t('education_in_poland')}</h2>
+              <h1>{t('education_in_poland')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('easy_application')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('affordable_living')}</li>
@@ -59,7 +59,7 @@ const Cover = () => {
           </div>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/kharkov.jpeg)` }}>
             <div className="content">
-              <h2>{t('education_in_ukraine')}</h2>
+              <h1>{t('education_in_ukraine')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('online_education')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
@@ -69,7 +69,7 @@ const Cover = () => {
           </div>
           <div className="slides" style={{ backgroundImage: `url( /assets/images/cover/turkiye.png)` }}>
             <div className="content">
-              <h2>{t('education_in_turkey')}</h2>
+              <h1>{t('education_in_turkey')}</h1>
               <ul>
                 <li><i className="fa-solid fa-check"></i> {t('high_standards')}</li>
                 <li><i className="fa-solid fa-check"></i> {t('recognized_diploma')}</li>
