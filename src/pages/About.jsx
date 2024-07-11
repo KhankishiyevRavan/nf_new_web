@@ -68,7 +68,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="mission_image">
-                            <img src="/nf_new_web/assets/images/mission.png" alt="" />
+                            <img src="/assets/images/mission.png" alt="" />
                         </div>
                     </div>
                 </div>

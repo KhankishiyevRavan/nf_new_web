@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div>
           <Link to="/">
-            <img src="/nf_new_web/assets/images/nf_logo_new-removebg.png" className="img-fluid logo-footer" alt="logo" />
+            <img src="/assets/images/nf_logo_new-removebg.png" className="img-fluid logo-footer" alt="logo" />
           </Link>
         </div>
         <div>
