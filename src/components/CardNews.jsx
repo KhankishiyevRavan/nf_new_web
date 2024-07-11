@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const CardNews = ({ info }) => {
-    const { t, i18n } = useTranslation(["news"]);
+    const { i18n } = useTranslation(["news"]);
 
     return (
         <Link to={`/news/${info.id}`} className="news_card">

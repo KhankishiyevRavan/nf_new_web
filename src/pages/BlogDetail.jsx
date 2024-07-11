@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { readData } from '../api/dbservice';
 import "./BlogDetail.css"
+import ReactPlayer from 'react-player/youtube';
 const BlogDetail = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
@@ -34,7 +35,8 @@ const BlogDetail = () => {
               blog?.name
             }
           </h2>
-          <iframe src={`${blog?.video_url}`} width={"100%"}></iframe>
+          <ReactPlayer height={"auto"} url={`${blog?.video_url}`} controls/>
+          {/* <frame src={`${blog?.video_url}`} width={"100%"}></frame> */}
           <span className='blog_date'><i className="fa-regular fa-calendar"></i> {blog?.date}</span>
           <p>{blog?.about}</p>
         </div>

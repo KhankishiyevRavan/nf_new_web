@@ -25,7 +25,8 @@ i18n
       "contact",
       "countries",
       "universityDetail",
-      "about"
+      "about",
+      "footer"
     ],
     interpolation: {
       espaceValue: false,
