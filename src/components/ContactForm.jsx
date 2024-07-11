@@ -4,7 +4,7 @@ import SelectOption from './Input/SelectOption';
 import { writeData } from "../api/dbservice";
 import Success from './Modal/Success';
 import { useTranslation } from 'react-i18next';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 const ContactForm = () => {
     const { t } = useTranslation(["contact"]);

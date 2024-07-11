@@ -48,6 +48,11 @@ const Header = () => {
     localStorage.setItem('currentLang', selectedLang);
   }, [selectedLang]);
 
+  const handleNavLinkClick = () => {
+    setMenuShow(false);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <header className={`main-header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
@@ -58,27 +63,27 @@ const Header = () => {
           <nav className={`menu ${menuShow ? "menuShow" : ""}`}>
             <ul>
               <li>
-                <NavLink exact="true" to="/" activeclassname="active">
+                <NavLink exact="true" to="/" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('home')}
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" to="/countries" activeclassname="active">
+                <NavLink exact="true" to="/countries" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('universities')}
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" to="/news" activeclassname="active">
+                <NavLink exact="true" to="/news" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('news')}
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" to="/about" activeclassname="active">
+                <NavLink exact="true" to="/about" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('about')}
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" to="/contact" activeclassname="active">
+                <NavLink exact="true" to="/contact" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('contact')}
                 </NavLink>
               </li>
@@ -111,7 +116,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
       </div>
     </header>
   );
