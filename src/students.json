@@ -1,17 +1,20 @@
 {
-    "0": {
-        "name": "",
-        "name_en": "",
-        "date": "",
-        "birthday":"",
-        "university_name":"",
-        "university_name_en":"",
-        "specialty_name":"",
-        "specialty_name_en":"",
-        "study_degree": "",
-        "study_degree_en": "",
-        "image_url": "",
-        "about": "",
-        "about_en": ""
+  "rules": {
+    "news": {
+      ".read": true,
+      ".write": "auth.uid != null"
+    },
+    "contacts": {
+      ".read": "auth != null",
+      ".write": true
+    },
+    "universities": {
+      ".read": true,
+      ".write": "auth.uid != null"
+    },
+    "subscribes": {
+      ".read": "auth != null",
+      ".write": true
     }
+  }
 }
