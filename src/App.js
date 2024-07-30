@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Countries from "./pages/Countries";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/BlogDetail";
+import NotFound from "./pages/NotFound";
 function App() {
   const location = useLocation();
   useEffect(() => {
