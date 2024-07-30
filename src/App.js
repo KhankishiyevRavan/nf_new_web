@@ -35,6 +35,7 @@ function App() {
             path="/country/university/:id"
             element={<UniversityDetail />}
           />
+          <Route path="*" element={<NotFound/>}/>
           {/* </Switch> */}
         </Routes>
       </main>
