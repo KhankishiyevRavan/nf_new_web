@@ -85,7 +85,7 @@ const UniversityDetail = () => {
                                 <span>{t("home")}</span>
                             </Link>
                             <p>/</p>
-                            <Link to="/countries" className="links_for">
+                            <Link to="/xaricde-tehsil" className="links_for">
                                 <span>{t("countries")}</span>
                             </Link>
                             <p>/</p>

@@ -19,7 +19,7 @@ const Footer = () => {
             <h2>{t('links')}</h2>
             <div className="use-links">
               <li><Link to="/"><i className="fa-solid fa-angles-right"></i> {t('home')}</Link></li>
-              <li><Link to="/countries"><i className="fa-solid fa-angles-right"></i> {t('universities')}</Link></li>
+              <li><Link to="/xaricde-tehsil"><i className="fa-solid fa-angles-right"></i> {t('universities')}</Link></li>
               <li><Link to="/news"><i className="fa-solid fa-angles-right"></i> {t('news')}</Link></li>
               <li><Link to="/about"><i className="fa-solid fa-angles-right"></i> {t('about')}</Link></li>
             </div>

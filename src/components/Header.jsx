@@ -68,7 +68,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" to="/countries" activeclassname="active" onClick={handleNavLinkClick}>
+                <NavLink exact="true" to="/xaricde-tehsil" activeclassname="active" onClick={handleNavLinkClick}>
                   {t('universities')}
                 </NavLink>
               </li>
